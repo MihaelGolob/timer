@@ -21,10 +21,10 @@ public class Timer {
     private bool _dirty;
 
     // constructor (set isRunning to true automatically if startOnAwake is true)
-    public Timer(float time, Action callback, bool loop = false, bool startOnAwake = false) =>
+    public Timer(float time, Action callback, bool loop = false, bool startOnAwake = true) =>
         (_time, _loop, _callback, _isRunning) = (time, loop, callback, startOnAwake);
     
-    public Timer(float time, bool loop = false, bool startOnAwake = false) =>
+    public Timer(float time, bool loop = false, bool startOnAwake = true) =>
         (_time, _loop, _isRunning) = (time, loop, startOnAwake);
 
     // public fields
