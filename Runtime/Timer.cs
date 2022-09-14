@@ -67,13 +67,13 @@ public class Timer {
         
         // check if timer has ended
         if (_timeElapsed >= _time) {
-            // invoke event
-            _callback?.Invoke();
-            
             // progress will be exactly 1.0
             _timeElapsed = _time;
             // set finished flag
             Finished = true;
+
+            // invoke event
+            _callback?.Invoke();
 
             // repeat if needed
             if (_loop) StartTimer();
