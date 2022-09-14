@@ -72,12 +72,12 @@ public class Timer {
             // set finished flag
             Finished = true;
 
-            // invoke event
-            _callback?.Invoke();
-
             // repeat if needed
             if (_loop) StartTimer();
             else _isRunning = false;
+
+            // invoke event
+            _callback?.Invoke();
         }
     }
     
