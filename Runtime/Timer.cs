@@ -1,5 +1,7 @@
 using System;
 
+namespace Ineor.Utils.Timer {
+
 /// <summary>
 /// This is a Timer class that can be used instead of Coroutines and is more efficient.
 /// It simply counts to the specified time amount and then invokes an event and sets a finished flag.
@@ -89,4 +91,6 @@ public class Timer {
         _timeElapsed = 0f;
         _isRunning = true;
     }
+}
+
 }

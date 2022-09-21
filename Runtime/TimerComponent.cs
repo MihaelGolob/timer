@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using Ineor.Utils.Timer;
 
 /// <summary>
 /// This is a MonoBehaviour edition of the basic Timer utility.
